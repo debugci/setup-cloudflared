@@ -1,11 +1,17 @@
 name: Setup cloudflared
-description: Setup/Install Cloudflare Tunnel client for GitHub Actions
+author: Jacob Hummer <jcbhmr@outlook.com>
+description: 🚛 Installs cloudflared for GitHub Actions
 branding:
   icon: cloud
   color: orange
 inputs:
   cloudflared-version:
-    description: ""
+    description: >
+      Specifies which version of the 'cloudflared' binary to install from the
+      GitHub Releases page. Note that this is not your typical 'v1.2.3 'version
+      string; instead Cloudflare uses a 'v2023.1.1' date-based versioning
+      scheme. The default value for this field is 'latest' which will
+      automagically default to the latest GitHub Release.
     default: latest
 runs:
   using: composite
