@@ -1,6 +1,6 @@
 # Setup Cloudflare Tunnel client
 
-🚛 Download and install `cloudflared` for GitHub Actions
+🚛 Installs `cloudflared` for GitHub Actions
 
 <div align="center">
 
