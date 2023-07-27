@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-export GH_TOKEN=$GITHUB_TOKEN
-
 if [[ $RUNNER_OS == Linux ]]; then
   if [[ $INPUT_CLOUDFLARED_VERSION == latest ]]; then
     sudo mkdir -p --mode=0755 /usr/share/keyrings
