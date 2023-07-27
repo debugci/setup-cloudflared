@@ -8,8 +8,7 @@
 
 </div>
 
-🚀 Downloads prebuilt `cloudflared` binary \
-👮‍♂️ Uses official cloudflare/cloudflared installation procedure \
+🚀 Downloads & installs the `cloudflared` binary \
 0️⃣ Zero-config &mdash; just add `uses: ttyci/setup-cloudflared@v1` \
 ⚠️ Only _installs_ `cloudflared` &mdash; it's on you to use it \
 🌈 Works on Windows, macOS, and Linux runners
