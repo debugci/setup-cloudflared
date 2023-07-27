@@ -49,8 +49,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./
-      - run: |
-          npx -y serve &
-          cloudflared tunnel --url http://localhost:3000 &
-          sleep 5m
-          kill 0
+      - run: nohup npx -y serve &
+      - run: nohup cloudflared tunnel --url http://localhost:3000 &
+      - run: sleep 5m
