@@ -75,7 +75,11 @@ just open an Issue! ❤️
 
 ![GNU Bash](https://img.shields.io/static/v1?style=for-the-badge&message=GNU+Bash&color=4EAA25&logo=GNU+Bash&logoColor=FFFFFF&label=)
 
-This GitHub Action is relatively simple. As such, it's currently Bash-based to keep things simple. To test the action, we use GitHub Actions (actions-ception!). To get started, just fork/clone the repo and make a PR! All PRs automatically run various use examples to make sure that the action "works" for basic stuff.
+This GitHub Action is relatively simple. As such, it's currently Bash-based to
+keep things simple. To test the action, we use GitHub Actions
+(actions-ception!). To get started, just fork/clone the repo and make a PR! All
+PRs automatically run various use examples to make sure that the action "works"
+for basic stuff.
 
 <!-- prettier-ignore-start -->
 [Cloudflare Tunnel client (formerly Argo Tunnel)]: https://github.com/cloudflare/cloudflared#readme
