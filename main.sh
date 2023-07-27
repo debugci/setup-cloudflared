@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+export GH_TOKEN=$GITHUB_TOKEN
+
 if [[ $RUNNER_OS == Linux ]]; then
   if [[ $INPUT_CLOUDFLARED_VERSION == latest ]]; then
     sudo mkdir -p --mode=0755 /usr/share/keyrings
@@ -18,7 +20,7 @@ elif [[ $RUNNER_OS == Windows ]]; then
   else
     gh release download -R cloudflare/cloudflared "$INPUT_CLOUDFLARED_VERSION" -p cloudflared-windows-amd64.msi
   fi
-  sudo ./cloudflared-windows-amd64.msi
+  msiexec /i ./cloudflared-windows-amd64.msi
 elif [[ $RUNNER_OS == macOS ]]; then
   if [[ $INPUT_CLOUDFLARED_VERSION == latest ]]; then
     brew install cloudflare/cloudflare/cloudflared
