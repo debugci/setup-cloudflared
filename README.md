@@ -4,12 +4,12 @@
 
 <div align="center">
 
-![](https://github.com/ttyci/setup-cloudflared/assets/61068799/4f6bbf6b-197e-401a-a1b2-2c7fb5a6e31f)
+![](https://i.imgur.com/fCYSI7n.png)
 
 </div>
 
 📦 Downloads & installs the `cloudflared` binary \
-🚀 Zero-config &mdash; just add `uses: ttyci/setup-cloudflared@v1` \
+🚀 Zero-config &mdash; just add `uses: debugci/setup-cloudflared@v1` \
 ⚠️ Only _installs_ `cloudflared` &mdash; it's on you to use it \
 🌈 Works on Windows, macOS, and Linux runners
 
@@ -24,7 +24,7 @@ the following `uses:` block to your GitHub Actions steps. It even works on
 Windows runners!
 
 ```yml
-- uses: ttyci/setup-cloudflared@v1
+- uses: debugci/setup-cloudflared@v1
 ```
 
 Then after setting up your `cloudflared` installation with that action 👆 you
@@ -49,7 +49,7 @@ jobs:
   npx-serve:
     runs-on: ubuntu-latest
     steps:
-      - uses: ttyci/setup-cloudflared@v1
+      - uses: debugci/setup-cloudflared@v1
       - run: |
           npx -y serve &
           cloudflared tunnel --url http://localhost:3000 &
