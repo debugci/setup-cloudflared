@@ -1,4 +1,4 @@
-name: Setup cloudflared
+name: Setup Cloudflare Tunnel client
 author: Jacob Hummer <jcbhmr@outlook.com>
 description: 🚛 Installs cloudflared for GitHub Actions
 branding:
