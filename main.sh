@@ -20,7 +20,7 @@ elif [[ $RUNNER_OS == Windows ]]; then
   else
     gh release download -R cloudflare/cloudflared "$INPUT_CLOUDFLARED_VERSION" -p cloudflared-windows-amd64.msi
   fi
-  msiexec /i ./cloudflared-windows-amd64.msi
+  runas /user:administrator "msiexec /i cloudflared-windows-amd64.msi"
 elif [[ $RUNNER_OS == macOS ]]; then
   if [[ $INPUT_CLOUDFLARED_VERSION == latest ]]; then
     brew install cloudflare/cloudflare/cloudflared
