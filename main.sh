@@ -2,7 +2,6 @@
 set -e
 
 export GH_TOKEN=$GITHUB_TOKEN
-cd "$(mktemp -d)"
 
 if [[ $RUNNER_OS == Linux ]]; then
   pushd "$(mktemp -d)"
