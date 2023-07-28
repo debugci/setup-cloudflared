@@ -50,11 +50,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: debugci/setup-cloudflared@v1
-      - run: |
-          npx -y serve &
-          cloudflared tunnel --url http://localhost:3000 &
-          echo 'To stop the server, click CANCEL in the workflow/job'
-          wait -n
+      - run: nohup npx -y serve &
+      - run: nohup cloudflared tunnel --url http://localhost:3000 &
+      - run: echo 'To stop the server, click CANCEL in the workflow/job'
+      - run: sleep 1h
 ```
 
 </details>
